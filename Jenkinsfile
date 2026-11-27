@@ -16,6 +16,12 @@ pipeline {
             }
         }
 
+        stage('Docker Push') {
+            steps {
+                sh 'docker push tallaom/maven-demo:v1'
+            }
+        }
+
     }
 
 }
